@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/f18c35903d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='drumastyle.css') }}">
+    <title> NebulaQuest </title>
+</head>
+<body>
+    <header class="showcase">
+        <div class="content">
+          <div class="title">
+            NEBULA QUEST
+          </div>
+          <div class="text">
+            Predict your image from UAV and satelite here. 
+          </div>
+        </div>
+        <div class="link">
+          <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('predict') }}">Predict</a></li>
+            <li><a href="{{ url_for('faq') }}">FAQ</a></li>
+            
+          </ul>
+        </div>
+    </header>
+      <!-- Services -->
+  <section class="services bg-dark">
+    <div class="container grid-3 center">
+      <div>
+        <i class="fas fa-upload fa-3x"></i>
+        <h3>Upload</h3>
+        <p>Upload an image you want to predict. The format could be on .tif, .jpg, .png. </p>
+      </div>
+      <div>
+        <i class="fas fa-cogs fa-3x"></i>
+        <h3>Set Up</h3>
+        <p>Set the patch size and your image resolution. Remember the patch size must not extend the image's pixel size.</p>
+      </div>
+      <div>
+        <i class="fas fa-check-circle fa-3x"></i>
+        <h3>Predicted!</h3>
+        <p>It's done! Your image has been predicted! </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about bg-light">
+    <div class="container">
+      <div class="grid-2">
+        <div class="center">
+          <img src="{{ url_for('static', filename='aboutus.png') }}" width="160" height="auto" class="logo" alt="Druma">
+        </div>
+        <div class>
+          <h3>About Us</h3>
+          <p align="justify">NebulaQuest is an Artifical Intelligence project.NebulaQuest is made to detect trees that have the potential to harm the power line. NebulaQuest uses Deepforest library that has been trained with more than 20 thousand trees to detect trees, and hough transform algorithm to detect power lines. NebulaQuest can be used to predict your images from UAVs or satellite.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="center bg-dark">
+    <p>NebulaQuest &copy; 2021</p>
+  </footer>
+</body>
+</html>
