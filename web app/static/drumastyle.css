@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    background: rgba(36, 35, 35, 0.9);
+    color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .showcase::after {
+    content: '';
+    height: 100vh;
+    width: 100%;
+    background-image: url(drumabackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    transition: all 1000ms;
+  }
+  
+  .content {
+    position: absolute;
+    z-index: 1;
+    top: 5%;
+    left: 42%;
+    margin-top: 170px;
+    margin-left: -145px;
+    width: 500px;
+    height: 400px;
+    text-align: center;
+    transition: all 1000ms;
+  }
+
+
+  .link .cobalogo {
+    height: 50px;
+    width: 30x;
+    float:left;
+    margin-top: -12px;
+  }
+  
+  .content .title {
+    font-size: 5rem;
+    margin-top: 3rem;
+    color:rgba(48, 45, 45, 0.9)
+  }
+  
+  .content .text {
+    line-height: 2.5rem;
+    font-size:1.25rem;
+    margin-top: 1rem;
+    color:rgb(48, 45, 45)
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+    padding: 4rem 1rem;
+  }
+  
+  .grid-3 {
+    display: grid;
+    grid-gap: 70px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .grid-2 {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .center {
+    text-align: center;
+    margin: auto;
+  }
+  
+  .bg-light {
+    background: #f4f4f4;
+    color: #333;
+  }
+  
+  .bg-dark {
+    background: #333;
+    color: #f4f4f4;
+  }
+
+  ul {
+    list-style-type:none;
+    text-align:right;
+    margin-right:50px;
+  }
+
+  ul li {
+    display: inline-block;
+  }
+
+  ul li a{
+    text-decoration:none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+  }
+  ul li a:hover{
+    background-color:#fff;
+    color: #000;
+  }
+   
+  footer {
+    padding: 1.0rem;
+  }
+  
+  footer p {
+    margin: 0;
+  }

@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin-right:0;
+  margin-left:0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  align-items: center;
+  justify-content: center;
+  background: rgba(36, 35, 35, 0.9);
+  color: rgb(255, 255, 255);
+  margin-bottom:0;
+
+}
+.green{
+  background-color:rgba(85, 175, 25, 0.9);
+  min-height:100vh;
+  padding-top:50px;
+  padding-bottom:50px;
+}
+::selection{
+  background:rgba(13, 216, 54, 0.3);
+}
+.wrapper{
+  max-width: auto;
+  padding: 0 20px;
+}
+.wrapper .parent-tab,
+.wrapper .child-tab{
+  margin-bottom: 8px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.18);
+}
+.wrapper .parent-tab label,
+.wrapper .child-tab label{
+  background: rgb(36, 35, 35);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  border-radius: 3px;
+  position: relative;
+  z-index: 99;
+  transition: all 0.3s ease;
+}
+.wrapper .parent-tab label:hover{
+  background: rgb(70, 71, 70);
+}
+.parent-tab input:checked ~ label,
+.child-tab input:checked ~ label{
+  border-radius: 3px 3px 0 0;
+  background: rgb(4, 71, 4);
+}
+.wrapper label span{
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
+.wrapper .child-tab label span{
+  font-size: 15px;
+}
+.parent-tab label .icon{
+  position: relative;
+  height: 30px;
+  width: 30px;
+  font-size: 15px;
+  color: #22a534;
+  display: block;
+  background: #fff;
+  border-radius: 50%;
+
+}
+.wrapper .child-tab label .icon{
+  height: 27px;
+  width: 27px;
+}
+.parent-tab label .icon i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.parent-tab input:checked ~ label .icon i:before,
+.child-tab input:checked ~ label .icon i:before{
+  content: '\f068';
+}
+.wrapper .parent-tab .content,
+.wrapper .child-tab .sub-content{
+  max-height: 0px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 0 0 3px 3px;
+  transition: all 0.4s ease;
+  color:#000;
+}
+.parent-tab input:checked ~ .content,
+.child-tab input:checked ~ .sub-content{
+  max-height: 100vh;
+}
+.tab-3 input:checked ~ .content{
+  padding: 15px 20px;
+}
+.parent-tab .content p,
+.child-tab .sub-content p{
+  padding: 15px 20px;
+  font-size: 14px;
+}
+.child-tab .sub-content p{
+  font-size: 15px;
+}
+input[type="radio"],
+input[type="checkbox"]{
+  display: none;
+}
+
+ul {
+    list-style-type:none;
+    text-align:right;
+    margin-right:50px;
+  }
+
+  ul li {
+    display: inline-block;
+  }
+
+  ul li a{
+    text-decoration:none;
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+  }
+  ul li a:hover{
+    background-color:#fff;
+    color: #000;
+  }
+  
+  .link .cobalogo {
+    height: 50px;
+    width: 30x;
+    float:left;
+    margin-top: -12px;
+  }
+  .bg-dark {
+    background: rgba(36, 35, 35, 0.9);;
+    color: #f4f4f4;
+    text-align:center;
+  }
+  footer {
+    padding: 0.5rem;
+  }
+  
+  footer p {
+    margin: 0;
+  }

@@ -1,0 +1,7 @@
+pandas
+opencv-python
+numpy
+flask
+pillow
+werkzeug
+requests

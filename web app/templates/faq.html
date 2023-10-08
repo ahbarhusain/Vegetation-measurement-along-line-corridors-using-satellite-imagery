@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='faqstyle.css') }}">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title> Druma </title>
+</head>
+<body>
+  <header class="showcase">
+    <div class="link">
+      <ul>
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('predict') }}">Predict</a></li>
+        <li><a href="{{ url_for('faq') }}">FAQ</a></li>
+        <img src="{{ url_for('static', filename='logodruma.png') }}" class="cobalogo" alt="Druma">
+      </ul>
+    </div>
+  </header>
+  <div class=green>
+    <div class="wrapper">
+      <!-- Accordion Heading One -->
+      <div class="parent-tab">
+        <input type="checkbox" name="tab" id="tab-1" checked>
+        <label for="tab-1">
+          <span>What is patch size?</span>
+          <div class="icon"><i class="fas fa-plus"></i></div>
+        </label>
+        <div class="content">
+          <p align="justify" >Patch size is a value that states how big the image is in the prediction process. 
+            When making a prediction, the image will be cropped to a smaller size for greater accuracy. 
+            For example, the value of the patch size is 800, then the cut of each image is 800 x 800 pixels. 
+            Note that the patch size value cannot exceed the predicted total pixel size of the image.</p>
+        </div>
+      </div>
+  
+      <!-- Accordion Heading Two -->
+      <div class="parent-tab">
+        <input type="checkbox" name="tab" id="tab-2">
+        <label for="tab-2">
+          <span>What is spatial resolution?</span>
+          <div class="icon"><i class="fas fa-plus"></i></div>
+        </label>
+        <div class="content">
+          <p align="justify">Spatial resolution is the smallest size of objects in the field that can be recorded on digital data and images. 
+            In this product, the unit used is meters. If the input spatial resolution is 10, then one pixel in the image means 10 x 10 meters in the field. 
+            Usually, when you use images from satellite and UAV, the spatial resolution value of the image is known. 
+            This value will be used to calculate the distance from the power line to the tree.</p>
+        </div>
+      </div>
+      <!-- Accordion Heading Three -->
+      <div class="parent-tab">
+        <input type="checkbox" name="tab" id="tab-3">
+        <label for="tab-3">
+          <span>How can I make the prediction better?</span>
+          <div class="icon"><i class="fas fa-plus"></i></div>
+        </label>
+        <div class="content">
+          <p align="justify">You can try changing the value of the patch size. 
+            The smaller the patch size, the detection results are seen from smaller visibility and the detection results are sometimes too detail (predicting too many tree crowns, even though there is only one tree crown). 
+            Therefore, for large images above 1000 x 1000 pixels, a 1000px patch size can be tried first. If the prediction results are considered too general (not detail enough), then the patch size can be reduced. 
+            If the prediction results are too detailed, the patch size can be enlarged. For images below 1000 x 1000 pixels, the prediction can be tried starting from 500px and can be adjusted further the same as in the previous case. 
+            Noted that the patch size cannot exceed the image size. From our experimental results, patch size 700-800 px is a good value to predict an image.</p>
+        </div>
+      </div>
+      <!-- Accordion Heading Four -->
+      <div class="parent-tab">
+        <input type="checkbox" name="tab" id="tab-4">
+        <label for="tab-4">
+          <span>What image resolution should i use?</span>
+          <div class="icon"><i class="fas fa-plus"></i></div>
+        </label>
+        <div class="content">
+          <p align="justify">Generally, a higher resolution image will have a better prediction result. 
+            We recommend using image with at least 1920x1080 HD resolution. 
+            In addition, the camera height when the image is taken will also affect the prediction result.
+            Lower camera height will give a better prediction. Our recommendation is to use images taken from 300 meter above ground at most.</p>
+        </div>
+      </div>	  
+    </div>
+  </div>
+  <footer class="center bg-dark">
+    <p>Druma &copy; 2021</p>
+  </footer>
+</body>
+</html>
+

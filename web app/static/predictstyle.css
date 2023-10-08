@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  margin: 0;
+  padding:0;
+  background: rgba(36, 35,35, 0.9);
+  color: rgb(255, 255, 255);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align:center;
+  align-items: center;
+  justify-content: center;
+}
+.upload{
+  background-color:rgba(85, 175, 25, 0.9);
+  min-height:100vh;
+  padding-top:100px;
+
+}
+.drag-area{
+  border: 2px dashed #fff;
+  height: 300px;
+  width: 500px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-left:auto;
+  margin-right:auto;
+
+}
+.drag-area.active{
+  border: 2px solid #fff;
+}
+.drag-area .icon{
+  font-size: 50px;
+  color: #fff;
+}
+.drag-area header{
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+}
+.drag-area span{
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  margin: 10px 0 15px 0;
+}
+.drag-area button{
+  padding: 5px 15px;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  background: #fff;
+  color: rgb(1, 41, 19);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.drag-area button:hover{
+  background-color:#333;
+  color: #fff;
+}
+
+.drag-area img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.button{
+  padding: 5px 15px;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  background: #fff;
+  color: rgb(1, 41, 19);
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom:40px;
+}
+.button:hover{
+  background-color:#333;
+  color: #fff;
+}
+
+ul {
+    list-style-type:none;
+    text-align:right;
+    margin-right:50px;
+    
+  }
+
+ul li {
+    display: inline-block;
+    margin-top:0;
+  }
+
+ul li a{
+    text-decoration:none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+  }
+ul li a:hover{
+    background-color:#fff;
+    color: #000;
+   }
+  
+.link .cobalogo {
+    height: 50px;
+    width: 30x;
+    float:left;
+    margin-top: -12px;
+  }
+.center {
+    text-align: center;
+    margin: auto;
+  }
+.bg-dark {
+    background: #333;
+    color: #f4f4f4;
+  }
+table{
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 5%; 
+    border-collapse: collapse;
+    border-spacing: 0;
+    box-shadow: 0 2px 15px rgba(64,64,64,.7);
+    border-radius: 12px 12px 0 0;
+    margin-top: 10px;
+    margin-bottom: 200px;
+
+   }
+td , th{
+    padding: 7px 12px;
+    text-align: center;
+    font-size: small;
+    
+   }
+th{
+    background-color: #333;
+    color: rgb(135, 241, 135);
+    font-family: 'Open Sans',Sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+   
+   }
+tr{
+    width: 100%;
+    background-color: #eeeeee;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+   }
+
+footer {
+    padding: 1.0rem;
+  }
+  
+footer p {
+    margin: 0;
+  }
+
+  div#loading{
+    display: none;
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 50px;
+  }
+
+  ::placeholder {
+    font-size: 0.9em;
+  
+  }
+
+canvas{
+  min-height: 60px;
+  display: block;
+}
+
+  
