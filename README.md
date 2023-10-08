@@ -16,3 +16,5 @@ NebulaQuest has 2 sub-system:
     - Deepforest API: This API will run a deep learning model from "Deepforest" for detecting the tree crown in the image.
     - Hough Transform API: This API will run Hough Transform for detecting power line in the image.
 
+![nebula](https://github.com/ahbarhusain/Vegetation-measurement-along-line-corridors-using-satellite-imagery/assets/97535337/de87b853-cdfb-495d-9f19-72f5a9ad9d2a)
+
