@@ -1,6 +1,5 @@
 # DRUMA 
 
-This is repository about my university final year project.
 
 ## Description
 
